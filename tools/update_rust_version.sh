@@ -9,8 +9,8 @@ rustup update nightly >/dev/null 2>/dev/null
 # Rerun the command so that it prints out the version it installed. We then have
 # to extract that from the output. If there is a better way to do this then we
 # should update this.
-RUSTUP_NIGHTLY_VERSION=`rustup update nightly 2>/dev/null`
-BEST_DATE=`echo $RUSTUP_NIGHTLY_VERSION | sed 's/.* \([0-9]*-[0-9]*-[0-9]*\).*/\1/g'`
+RUSTUP_NIGHTLY_VERSION=`rustup update nightly 2>&1`
+BEST_DATE=`echo $RUSTUP_NIGHTLY_VERSION | sed 's/.*nightly-\([0-9]*-[0-9]*-[0-9]*\).*/\1/g'`
 
 # Nightly version string
 NIGHTLY=nightly-$BEST_DATE
