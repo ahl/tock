@@ -9,12 +9,6 @@ Each MCU folder contains the hardware peripheral drivers for that MCU.
 HIL Support
 -----------
 
-| symbol  | meaning |
-|---------|---------|
-| ✓       | support implemented |
-| ✗       | support not yet implemented |
-| -blank- | not relevant for the given chip |
-
 <!--START OF HIL SUPPORT-->
 
 | HIL                                     | arty_e21 | cc26x2 | e310x | nrf52 | sam4l | stm32f4xx | ibex |
@@ -32,7 +26,7 @@ HIL Support
 | gpio::InterruptPin                      | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
 | gpio::Output                            | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
 | gpio::Pin                               | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
-| i2c::I2CMaster                          |          | ✓      |       | ✓     | ✓     |           | ✗    |
+| i2c::I2CMaster                          |          | ✓      |       | ✓     | ✓     |           | ✗ unimplemented    |
 | i2c::I2CMasterSlave                     |          |        |       |       | ✓     |           |      |
 | i2c::I2CSlave                           |          |        |       |       | ✓     |           |      |
 | mod::Controller                         |          |        |       | ✓     | ✓     |           |      |
@@ -41,17 +35,17 @@ HIL Support
 | radio::RadioConfig                      |          |        |       | ✓     |       |           |      |
 | radio::RadioData                        |          |        |       | ✓     |       |           |      |
 | sensors::TemperatureDriver              |          |        |       | ✓     |       |           |      |
-| spi::SpiMaster                          |          |        |       | ✓     | ✓     | ✓         | ✗    |
-| spi::SpiSlave                           |          |        |       |       | ✓     |           | ✗    |
-| symmetric_encryption::AES128            |          |        |       | ✓     | ✓     |           | ✗    |
+| spi::SpiMaster                          |          |        |       | ✓     | ✓     | ✓         | ✗ unimplemented    |
+| spi::SpiSlave                           |          |        |       |       | ✓     |           | ✗ unimplemented    |
+| symmetric_encryption::AES128            |          |        |       | ✓     | ✓     |           | ✗ unimplemented    |
 | symmetric_encryption::AES128CBC         |          |        |       | ✓     | ✓     |           |      |
 | symmetric_encryption::AES128CCM         |          |        |       | ✓     |       |           |      |
-| symmetric_encryption::AES128Ctr         |          |        |       | ✓     | ✓     |           | ✗    |
+| symmetric_encryption::AES128Ctr         |          |        |       | ✓     | ✓     |           | ✗ unimplemented    |
 | time::Alarm                             |          | ✓      |       | ✓     | ✓     | ✓         | ✓    |
 | time::Frequency                         |          | ✓      |       | ✓     |       |           | ✓    |
 | time::Time                              |          | ✓      |       | ✓     | ✓     | ✓         | ✓    |
 | uart::Configure                         | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
-| uart::Receive                           | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
+| uart::Receive                           | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✗ unimplemented    |
 | uart::ReceiveAdvanced                   |          |        |       |       | ✓     |           |      |
 | uart::Transmit                          | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
 | uart::Uart                              | ✓        | ✓      | ✓     | ✓     | ✓     | ✓         | ✓    |
